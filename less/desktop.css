@@ -2,14 +2,14 @@
 /* Colors */
 /* Sizes */
 .header {
-  min-height: 505px;
-  background-image: url(../img/bg1_3.jpg);
+  min-height: 525px;
+  background-image: url(../img/bg1.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-color: #ffffff;
 }
 .wrap {
-  width: 280px;
+  width: 1168px;
   margin: 0 auto;
 }
 .headerMenu {
@@ -17,33 +17,54 @@
   justify-content: space-between;
 }
 .logo {
-  height: 29px;
+  height: 46px;
 }
 .headerPadding {
   padding-top: 27px;
 }
-.headerBurger {
-  color: #ffffff;
+.headerMainMenu {
+  flex-grow: 1;
+  padding-left: 130px;
+  padding-top: 10px;
 }
-.mainMenuItems {
+.headerBurger {
   display: none;
 }
+.mainMenuItems {
+  display: flex;
+  justify-content: space-between;
+}
+.mainMenuItem {
+  list-style-type: none;
+}
+.mainMenuLink {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 18px;
+}
 .headerSendContainer {
-  margin-top: 240px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 748px;
 }
 .headerHeading {
   text-transform: uppercase;
-  margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #ffffff;
 }
 .headerDescribe {
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: #ffffff;
 }
 .sendButton {
-  width: 278px;
+  width: 360px;
   height: 48px;
   background-color: #008DCD;
   color: #ffffff;
@@ -51,7 +72,7 @@
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 24px;
-  text-align: right;
+  text-align: center;
   padding: 10px 20px;
   border: none;
 }
