@@ -1,0 +1,76 @@
+@import "__variables.less";
+@import "__mixins.less";
+.header {
+    min-height: 525px;
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: @mainWhite;
+}
+
+.wrap {
+    width: @displayWrap;
+    margin: 0 auto;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 46px;
+}
+
+.headerPadding {
+    padding-top: 27px;
+}
+
+.headerMainMenu {
+    flex-grow: 1;
+    padding-left: 130px;
+    padding-top: 10px;
+}
+
+.headerBurger {
+    display: none;
+}
+
+.mainMenuItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainMenuItem {
+    list-style-type: none;
+}
+
+.mainMenuLink {
+    .siteLinks .headerDesktopLink();
+}
+
+.headerSendContainer {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 748px;
+}
+
+.headerHeading {
+    text-transform: uppercase;
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: @mainWhite;
+}
+
+.headerDescribe {
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: @mainWhite;
+}
+
+.sendButton {
+    .buttonStyle .desktop();
+}
