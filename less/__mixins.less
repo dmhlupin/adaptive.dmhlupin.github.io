@@ -1,0 +1,56 @@
+@import "__variables.less";
+.buttonStyle() {
+    .mobile {
+        width: 278px;
+        height: 48px;
+        background-color: @mainBlue;
+        color: @mainWhite;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 24px;
+        text-align: right;
+        padding: 10px 20px;
+        border: none;
+    }
+    .desktop {
+        width: 360px;
+        height: 48px;
+        background-color: @mainBlue;
+        color: @mainWhite;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 24px;
+        text-align: center;
+        padding: 10px 20px;
+        border: none;
+    }
+    .hover {
+        box-shadow: 0px 8px 15px 0px rgba(0, 141, 205, 0.4);
+    }
+    .pressed {
+        background-color: @mainLightBlue;
+        box-shadow: none;
+    }
+}
+
+
+
+.siteLinks() {
+    .headerLink {
+        text-decoration: none;
+        color: @mainWhite;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    .headerDesktopLink {
+        text-decoration: none;
+        color: @mainWhite;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
