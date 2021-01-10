@@ -2,14 +2,14 @@
 /* Colors */
 /* Sizes */
 .header {
-  min-height: 505px;
-  background-image: url(../img/bg1_3.jpg);
+  min-height: 415px;
+  background-image: url(../img/bg1_2.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-color: #ffffff;
 }
 .wrap {
-  width: 280px;
+  width: 700px;
   margin: 0 auto;
 }
 .headerMenu {
@@ -22,25 +22,46 @@
 .headerPadding {
   padding-top: 27px;
 }
-.headerBurger {
-  color: #ffffff;
+.headerMainMenu {
+  flex-grow: 1;
+  padding-left: 20px;
+  padding-top: 8px;
 }
-.mainMenuItems {
+.headerBurger {
   display: none;
 }
+.mainMenuItems {
+  display: flex;
+  justify-content: space-between;
+}
+.mainMenuItem {
+  list-style-type: none;
+}
+.mainMenuLink {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+}
 .headerSendContainer {
-  margin-top: 240px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 400px;
 }
 .headerHeading {
   text-transform: uppercase;
+  font-size: 44px;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 .headerDescribe {
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 26px;
+  color: #ffffff;
 }
 .sendButton {
   width: 278px;
@@ -64,33 +85,38 @@
 }
 .about {
   background-color: #f7f7f7;
-  margin-top: 10px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .aboutBlock {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
 }
 .aboutImage {
-  width: 278px;
-  margin-bottom: 20px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  width: 100%;
 }
 .aboutHeading {
+  font-size: 36px;
   font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 20px;
+  display: block;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .aboutDesc {
+  font-size: 14px;
   font-weight: 400px;
-  font-size: 12px;
-  margin-bottom: 20px;
 }
 .stepsBlock {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 100%;
+  grid-column-gap: 80px;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
 }
 .step {
   width: 100%;
@@ -107,8 +133,8 @@
   margin-bottom: 10px;
 }
 .stepDesc {
-  line-height: 16px;
-  font-size: 14px;
+  line-height: 20px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -116,10 +142,13 @@
   background-color: #f7f7f7;
 }
 .stepsResumeBlock {
-  padding: 20px 0 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 124px;
 }
 .stepResumeHeading {
-  font-size: 24px;
+  width: 50%;
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 20px;
 }
