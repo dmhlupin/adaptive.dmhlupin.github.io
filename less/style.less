@@ -1,5 +1,6 @@
 //out: ../css/style.css
 @import "__variables.less";
+@import "__mixins.less";
 * {
     margin: 0;
     padding: 0;
@@ -9,12 +10,14 @@ body {
     font-family: 'Myriad Pro', sans-serif;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
     @import "mobile.less";
 }
 
-@media (max-width: 768px) and (min-width: 321px) {
-    .header {
-        background-image: url(../img/bg1_2.jpg);
-    }
+@media (min-width: 768px) and (max-width: 1439px)  {
+    @import "tablet.less";
+}
+
+@media (min-width: 1440px) {
+    @import "desktop.less";
 }

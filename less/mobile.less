@@ -1,4 +1,5 @@
 @import "__variables.less";
+@import "__mixins.less";
 .header {
     min-height: 505px;
     background-image: url(../img/bg1_3.jpg);
@@ -10,4 +11,75 @@
 .wrap {
     width: @mobileWrap;
     margin: 0 auto;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 29px;
+}
+
+.headerPadding {
+    padding-top: 27px;
+}
+
+.headerBurger {
+    color: @mainWhite;
+}
+
+.mainMenuItems {
+    display: none;
+}
+
+.headerSendContainer {
+    margin-top: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headerHeading {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.headerDescribe {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sendButton {
+    .buttonStyle .mobile();
+}
+
+.about {
+    background-color: #f7f7f7;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.aboutBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aboutImage {
+    width: 278px;
+    margin-bottom: 20px;
+}
+
+.aboutHeading {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.aboutDesc {
+    font-weight: 400px;
+    font-size: 12px;
+    margin-bottom: 20px;
 }
