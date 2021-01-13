@@ -2,14 +2,14 @@
 /* Colors */
 /* Sizes */
 .header {
-  min-height: 505px;
-  background-image: url(../img/bg1_3.jpg);
+  min-height: 525px;
+  background-image: url(../img/bg1.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-color: #ffffff;
 }
 .wrap {
-  width: 280px;
+  width: 1168px;
   margin: 0 auto;
 }
 .headerMenu {
@@ -17,33 +17,54 @@
   justify-content: space-between;
 }
 .logo {
-  height: 29px;
+  height: 46px;
 }
 .headerPadding {
   padding-top: 27px;
 }
-.headerBurger {
-  color: #ffffff;
+.headerMainMenu {
+  flex-grow: 1;
+  padding-left: 130px;
+  padding-top: 10px;
 }
-.mainMenuItems {
+.headerBurger {
   display: none;
 }
+.mainMenuItems {
+  display: flex;
+  justify-content: space-between;
+}
+.mainMenuItem {
+  list-style-type: none;
+}
+.mainMenuLink {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 18px;
+}
 .headerSendContainer {
-  margin-top: 240px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 748px;
 }
 .headerHeading {
   text-transform: uppercase;
-  margin-bottom: 10px;
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #ffffff;
 }
 .headerDescribe {
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: #ffffff;
 }
 .sendButton {
-  width: 278px;
+  width: 360px;
   height: 48px;
   background-color: #008DCD;
   color: #ffffff;
@@ -51,7 +72,7 @@
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 24px;
-  text-align: right;
+  text-align: center;
   padding: 10px 20px;
   border: none;
 }
@@ -62,35 +83,43 @@
   background-color: #94d1ec;
   box-shadow: none;
 }
+.yellowButton {
+  background-color: #ffcc00;
+  color: #363636;
+  margin-bottom: 10px;
+}
 .about {
   background-color: #f7f7f7;
-  margin-top: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 .aboutBlock {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
 }
 .aboutImage {
-  width: 278px;
-  margin-bottom: 20px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  width: 100%;
 }
 .aboutHeading {
+  font-size: 36px;
   font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 20px;
 }
 .aboutDesc {
+  font-size: 16px;
   font-weight: 400px;
-  font-size: 12px;
-  margin-bottom: 20px;
 }
 .stepsBlock {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 100%;
+  grid-column-gap: 80px;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 50px;
 }
 .step {
   width: 100%;
@@ -107,8 +136,8 @@
   margin-bottom: 10px;
 }
 .stepDesc {
-  line-height: 16px;
-  font-size: 14px;
+  line-height: 20px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 10px;
 }
@@ -116,40 +145,40 @@
   background-color: #f7f7f7;
 }
 .stepsResumeBlock {
-  padding: 20px 0 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
 }
 .stepResumeHeading {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 700;
-  margin-bottom: 20px;
-}
-.callback {
-  background-color: #008DCD;
 }
 .callbackBlock {
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-.callbackHeader {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: 64% 31%;
+  grid-column-gap: 60px;
 }
 .callbackDesk {
-  color: #ffffff;
-  font-weight: 400;
-  margin-bottom: 20px;
-  font-size: 14px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
-.yellowButton {
-  background-color: #ffcc00;
-  color: #363636;
-  margin-bottom: 10px;
+.callbackForm {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.callbackHeader {
+  font-size: 48px;
+}
+.callbackDesk {
+  font-size: 24px;
 }
 .callbackPhoneInput {
-  width: 236px;
+  width: 318px;
   height: 46px;
   background-color: #008DCD;
   color: #ffffff;
@@ -158,35 +187,4 @@
   border-radius: 24px;
   padding: 0 20px;
   border: 1px solid #ffffff;
-  margin-bottom: 10px;
-}
-.callbackPhoneInput::placeholder {
-  color: #ffffff;
-}
-.callbackForm label {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 10px;
-  display: block;
-}
-.callbackCheckbox {
-  display: none;
-}
-.callbackForm label:before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background-color: #008DCD;
-  border: 1px solid #ffffff;
-  vertical-align: middle;
-  margin: 0 10px;
-}
-.callbackCheckbox:checked + label::before {
-  content: "\2713";
-  font-size: 8px;
-  color: #ffffff;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 10px;
 }
