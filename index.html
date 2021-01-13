@@ -9,16 +9,87 @@
     <link rel="stylesheet" href="fonts/MyriadPro-Light/style.css" type="text/css">
     <link rel="stylesheet" href="fonts/MyriadPro-SemiboldIt/style.css" type="text/css">
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css"> </head>
 
 <body>
     <header class="header">
         <div class="wrap">
-            <div class="headerMenu">
-                <a href="#" class="headerLogo"><img src="./img/logo_138x40.png" alt="logo"></a>
+            <div class="headerMenu headerPadding">
+                <a href="#" class="headerLogo"><img class="logo" src="./img/logo_160x46.png" alt="logo"></a>
+                <div class="headerMainMenu">
+                    <div class="headerBurger"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+                    <ul class="mainMenuItems">
+                        <li class="mainMenuItem"><a href="#" class="mainMenuLink">Главная</a></li>
+                        <li class="mainMenuItem"><a href="#" class="mainMenuLink">Отзывы</a></li>
+                        <li class="mainMenuItem"><a href="#" class="mainMenuLink">Гарантии</a></li>
+                        <li class="mainMenuItem"><a href="#" class="mainMenuLink">Описание</a></li>
+                        <li class="mainMenuItem"><a href="#" class="mainMenuLink">Партнеры</a></li>
+                        <li class="mainMenuItem"><a href="#" class="mainMenuLink">Преимущества</a></li>
+                        <li class="mainMenuItem"><a href="#" class="mainMenuLink">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="headerSendContainer">
+                <h1 class="headerHeading headerTextColor">Придумайте что отправить</h1>
+                <h2 class="headerDescribe headerTextColor">А посылка доедет сама</h2>
+                <button class="sendButton">отправить посылку</button>
             </div>
         </div>
     </header>
+    <section class="about">
+        <div class="wrap">
+            <div class="aboutBlock"> <img class="aboutImage" src="./img/about.png" alt="about">
+                <h3 class="aboutHeading">Мы - агрегатор служб доставки</h3>
+                <p class="aboutDesc">С&nbsp;нами удобно вам, вашим клиентам и&nbsp;курьерским службам. Для вас наши услуги бесплатны, так как мы&nbsp;получаем бонусы от&nbsp;служб доставок за&nbsp;предоставленный объем заказов, а&nbsp;вы&nbsp;получаете надежный сервис в&nbsp;подарок!</p>
+                <button class="sendButton">отправить посылку</button>
+            </div>
+        </div>
+    </section>
+    <section class="steps">
+        <div class="wrap">
+            <div class="stepsBlock">
+                <div class="step step-1"> <img class="stepImage" src="./img/step1.png" alt="step1">
+                    <h3 class="stepHeading">Шаг 1</h3>
+                    <p class="stepDesc">Придумайте что и кому отправить</p>
+                </div>
+                <div class="step step-2"> <img class="stepImage" src="./img/step2.png" alt="step2">
+                    <h3 class="stepHeading">Шаг 2</h3>
+                    <p class="stepDesc">Создайте заявку на&nbsp;сайте SendIt&nbsp;&mdash; Ваш персональный менеджер позвонит и&nbsp;подтвердит запрос, уточнит все необходимые данные</p>
+                </div>
+                <div class="step step-3"> <img class="stepImage" src="./img/step3.png" alt="step3">
+                    <h3 class="stepHeading">Шаг 3</h3>
+                    <p class="stepDesc">К&nbsp;Вам приезжает курьер, забирает посылку, Вы&nbsp;подписываете один документ</p>
+                </div>
+                <div class="step step-4"> <img class="stepImage" src="./img/step4.png" alt="step4">
+                    <h3 class="stepHeading">Шаг 4</h3>
+                    <p class="stepDesc">Вы&nbsp;ждёте подтверждения доставки, слова радости и&nbsp;благодарности от&nbsp;адресата&nbsp;:)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stepResume">
+        <div class="wrap">
+            <div class="stepsResumeBlock">
+                <h3 class="stepResumeHeading">Мы берем все заботы по доставке на себя</h3>
+                <button class="sendButton">отправить посылку</button>
+            </div>
+        </div>
+    </section>
+    <section class="callback">
+        <div class="wrap">
+            <div class="callbackBlock">
+                <h2 class="callbackHeader">Хотите мы вам перезвоним?</h2>
+                <p class="callbackDesk">Закажите звонок, и&nbsp;менеджер вам всё расскажет и&nbsp;объяснит</p>
+                <form action="POST" class="callbackForm">
+                    <input type="tel" class="callbackPhoneInput" name="tel" placeholder="Ваш телефон" pattern="7[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <input type="submit" class="sendButton yellowButton">
+                    <input type="checkbox" class="callbackCheckbox" name="callbackCheckbox" id="callbackCheckbox">
+                    <label for="callbackCheckbox">Я согласен на обработку персональных данных</label>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
