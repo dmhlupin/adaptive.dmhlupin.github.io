@@ -1,0 +1,262 @@
+@import "__variables.less";
+@import "__mixins.less";
+.header {
+    min-height: 415px;
+    background-image: url(../img/bg1_2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: @mainWhite;
+}
+
+.wrap {
+    width: @tabletWrap;
+    margin: 0 auto;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 29px;
+}
+
+.headerPadding {
+    padding-top: 27px;
+}
+
+.headerMainMenu {
+    flex-grow: 1;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+
+.headerBurger {
+    display: none;
+}
+
+.mainMenuItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainMenuItem {
+    list-style-type: none;
+}
+
+.mainMenuLink {
+    .siteLinks .headerLink();
+}
+
+.headerSendContainer {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.headerHeading {
+    text-transform: uppercase;
+    font-size: 44px;
+    margin-bottom: 10px;
+    color: @mainWhite;
+}
+
+.headerDescribe {
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 26px;
+    color: @mainWhite;
+}
+
+.sendButton {
+    .buttonStyle .mobile();
+}
+
+.sendButton:hover {
+    .buttonStyle .hover();
+}
+
+.sendButton:active {
+    .buttonStyle .pressed();
+}
+
+.yellowButton {
+    .buttonStyle .yellowBg();
+    margin-bottom: 10px;
+}
+
+.about {
+    background-color: #f7f7f7;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.aboutBlock {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.aboutImage {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    width: 100%;
+}
+
+.aboutHeading {
+    font-size: 36px;
+    font-weight: 700;
+    display: block;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.aboutDesc {
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.stepsBlock {
+    display: grid;
+    grid-column-gap: 80px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.step {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.stepImage {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.stepHeading {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stepDesc {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.stepResume {
+    background-color: #f7f7f7;
+}
+
+.stepsResumeBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 124px;
+}
+
+.stepResumeHeading {
+    width: 50%;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.callbackBlock {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 20%;
+}
+
+.callbackDesk {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.callbackForm {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.feedbackTitle {
+    margin: 40px 0 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: @mainDarkGrey;
+}
+
+.feedbackSlider {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    padding: 20px 60px;
+}
+
+.sliderBlock {
+    position: relative;
+    margin: 0;
+    grid-template-columns: 40% 55%;
+    grid-column-gap: 5%;
+}
+
+#feedback_1:checked ~ #sliderBlock2,
+#feedback_2:checked ~ #sliderBlock3,
+#feedback_3:checked ~ #sliderBlock1 {
+    visibility: visible;
+}
+
+#feedback_1:checked ~ #sliderBlock3,
+#feedback_2:checked ~ #sliderBlock1,
+#feedback_3:checked ~ #sliderBlock2 {
+    display: none;
+}
+
+#feedback_3:checked ~#sliderBlock3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#feedback_3:checked ~#sliderBlock1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+// Наши преимущества
+
+.preferences {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.preferencesTitle {
+    .heading2 .desktop();
+    margin-bottom: 20px;
+}
+
+
+.preferencesBlock {
+    grid-template-columns: repeat(6, 1fr);
+}
+.prefImgContainer {
+    width: 100px;
+    height: 100px;
+}
+.prefDesc {
+    font-size: 12px;
+    line-height: 15px;
+}
